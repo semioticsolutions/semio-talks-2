@@ -327,9 +327,17 @@
     <Login />
   {/if} -->
 
+  <!-- usunięty panel boczny
+
   <Sidebar on:new-chat={() => newChat()} />
+-->
+<!-- oryginalny
   <div
     class="h-screen flex justify-stretch flex-col md:ml-[260px] bg-secondary text-white/80 height-manager"
+  >
+  -->
+  <div
+    class="h-screen flex justify-stretch flex-col bg-secondary text-white/80 height-manager"
   >
     <Topbar bind:conversation_title={conversationTitle} on:new-chat={newChat} />
     <div
