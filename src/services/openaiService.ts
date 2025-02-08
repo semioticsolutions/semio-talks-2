@@ -180,7 +180,7 @@ export const createRun = async (convId, threadId, assistantId) => {
     let dots = 0;
     const tempMessageId = Date.now();
     const updateMessage = async () => {
-      const content = `🔄 Analizuję${".".repeat(dots % 4)}`;
+      const content = `🔄 Odpowiadam${".".repeat(dots % 4)}`;
       await setHistory(
         [...currentHistory, { id: tempMessageId, role: "assistant", content }],
         convId
