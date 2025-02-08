@@ -1,0 +1,120 @@
+
+  .height-manager {
+  height: calc(var(--app-height) * 100);
+}
+
+/* On larger screens, use 100vh directly */
+@media (min-width: 1024px) {
+  .height-manager {
+    height: 100vh;
+  }
+}
+ .tools {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s, visibility 0.1s;
+  }
+  .message:hover .tools {
+  opacity: 1;
+  visibility: visible;
+  } 
+
+  .file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .file-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap as needed */
+    color: #FFF;
+    /* Additional styling to make the label visually appealing */
+  }
+
+  /* Hover and active states for the label */
+  .file-label:hover, .file-label:active {
+    background-color: #696d85; /* Replace with your hover color */
+    cursor: pointer;
+  }
+  .file-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* You can adjust or remove the gap, depending on your icon and design */
+    /* Ensure your button is appropriately sized for your icon */
+  }
+
+  .upload-icon {
+    width: 36px; /* Adjust based on your icon's size */
+    height: auto; }
+
+    .fileCount {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px; /* Diameter of the circle */
+      height: 40px; /* Diameter of the circle */
+      border: 2px solid white; /* Border color and width of the circle */
+      border-radius: 50%; /* Makes the element a circle */
+      background-color: transparent; /* Transparent background */
+      color: white; /* Text color */
+      font-size: 16px; /* Adjust based on your design */
+    }
+
+    .pdf-icon {
+      width: 36px; /* Adjust based on your icon's size */
+      height: auto; }
+
+
+    .copy-icon {
+      filter: invert(60%);    
+      }
+    .copy-icon:hover {
+filter: invert(100%);    
+}
+.delete-icon {
+  filter: grayscale(100%) invert(75%);    
+
+}
+.delete-icon:hover {
+filter: none;    
+}
+.edit-icon {
+  filter: grayscale(100%) invert(75%);    
+
+}
+.edit-icon:hover {
+  filter: grayscale(100%) invert(100%);    
+}
+
+.inputbox-container {
+  /* Ensures the container takes up full available width */
+  width: 100%;
+  /* Center alignment */
+  justify-content: center;
+  /* Align items vertically */
+  align-items: center;
+  /* Display as flex to enable flexbox properties */
+  display: flex;
+}
+.semio-col-width {
+  max-width: 55rem;
+}
+
+::-webkit-scrollbar { width: 8px;}
+::-webkit-scrollbar-button {  background-color: #464d5c; height: 0px; }
+::-webkit-scrollbar-track-piece { background-color: #282c34;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 12px;}
+::-webkit-scrollbar-corner { background-color: #646464;}
+::-webkit-resizer { background-color: #666;}
+
+.message p {
+padding-bottom: 0.5rem;
+
+}

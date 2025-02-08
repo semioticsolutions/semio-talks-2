@@ -1,0 +1,37 @@
+.fixed {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Center the settings window horizontally and vertically */
+  .min-h-screen {
+    min-height: calc(100vh - 4rem);
+  }
+
+  /* Adjust the width of the settings window */
+  .bg-white {
+    width: 24rem;
+  }
+
+  /* Add some padding to the text input */
+  .border {
+    padding: 0.5rem;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+  input:checked ~ .dot {
+    transform: translateX(1.5rem);
+    background-color: #8ee78e;
+  }
