@@ -415,7 +415,7 @@
                 <div class="grid grid-cols-3 gap-4 p-4">
                   <button
                     class="text-white py-4 px-6 rounded border border-white hover:bg-gray-700 flex items-center justify-center"
-                    style="height: 150px; width: 100%; font-size: 2vw;"
+                    style="height: 10vw; width: 100%; font-size: 1.5vw;"
                     on:click={() =>
                       handleQuestionClick(
                         "Dla kogo są zajęcia w Semio Academy i czego się tam nauczysz?"
@@ -427,7 +427,7 @@
 
                   <button
                     class="text-white py-4 px-6 rounded border border-white hover:bg-gray-700 flex items-center justify-center"
-                    style="height: 150px; width: 100%; font-size: 2vw"
+                    style="height: 10vw; width: 100%; font-size: 1.5vw;"
                     on:click={() =>
                       handleQuestionClick(
                         "Do czego służą takie narzędzia jak znak, kody, mapa kodów, RDE, kwadrat semiotyczny?"
@@ -439,7 +439,7 @@
 
                   <button
                     class="text-white py-4 px-6 rounded border border-white hover:bg-gray-700 flex items-center justify-center"
-                    style="height: 150px; width: 100%; font-size: 2vw"
+                    style="height: 10vw; width: 100%; font-size: 1.5vw;"
                     on:click={() =>
                       handleQuestionClick(
                         "Jak semiotyka marketingowa może pomóc w budowaniu odróżnialnego wizerunku marki na konkurencyjnym rynku?"
